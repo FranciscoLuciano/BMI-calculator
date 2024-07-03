@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040924;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.box1 {
+  background-color: white;
+  border-radius: 6px;
+  padding: 48px 64px 64px 64px;
+}
+
+.space-bottom {
+  margin-bottom: 32px;
+}
+
+input {
+  width: 300px;
+  height: 52px;
+
+  padding: 16px;
+  border: 1px solid #DCE2E9;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  outline-color: #02799D;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.calcule {
+  color: white;
+  text-transform: uppercase;
+  padding: 16px;
+  width: 300px;
+  height: 52px;
+  text-align: center;
+
+  margin-top: 16px;
+
+  background-color: #02799D;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 700;
+
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: #046481;
+  }
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+.modal {
+  position: fixed;
+  background-color: white;
+  padding: 48px 64px 64px 64px;
+  border-radius: 6px;
+  z-index: 10;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.closeModal {
+  width: 14px;
+  height: 14px;
+
+  border: none;
+  background-color: white;
+  cursor: pointer;
+
+}
+
+.h1-IMC {
+  padding: 48px 64px 64px 64px;
+}
+
+.hide {
+  display: none;
+}
+
+.header-modal{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.error-message {
+  position: absolute;
+  top: 20px;
+  background-color: #f03E3E;
+  color: white; 
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; 
+  width: 1280px;
+  height: 36px;
+  text-align: center;
+  z-index: 10;
+}
